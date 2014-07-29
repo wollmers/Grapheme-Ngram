@@ -110,7 +110,7 @@ Helmut Wollmersdorfer, E<lt>helmut.wollmersdorfer@gmail.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2013-2014 by Helmut Wollmersdorfer
+Copyright (C) 2014 by Helmut Wollmersdorfer
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
