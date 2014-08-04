@@ -1,6 +1,7 @@
 Revision history for Grapheme::Ngram
 
 {{$NEXT}}
+       - quote version
 
 0.001  2014-07-29 22:03:51 CEST
        - Initial release.
