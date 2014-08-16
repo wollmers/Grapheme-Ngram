@@ -1,6 +1,7 @@
 Revision history for Grapheme::Ngram
 
 {{$NEXT}}
+       - add travis
 
 0.002  2014-08-04 22:05:17 CEST
        - quote version
