@@ -1,6 +1,7 @@
 Revision history for Grapheme::Ngram
 
 {{$NEXT}}
+       - badges in pod
 
 0.003  2014-08-16 07:44:43 CEST
        - add travis
