@@ -1,6 +1,8 @@
 Revision history for Grapheme::Ngram
 
 {{$NEXT}}
+
+0.004  2014-08-16 23:38:24 CEST
        - badges in pod
 
 0.003  2014-08-16 07:44:43 CEST

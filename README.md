@@ -4,10 +4,9 @@ Grapheme::Ngram - n-grams of Unicode Extended Grapheme Clusters
 
 <div>
 
+    <a href="https://travis-ci.org/wollmers/Grapheme-Ngram"><img src="https://travis-ci.org/wollmers/Grapheme-Ngram.png" alt="Grapheme-Ngram"></a>
+    <a href='https://coveralls.io/r/wollmers/Grapheme-Ngram?branch=master'><img src='https://coveralls.io/repos/wollmers/Grapheme-Ngram/badge.png?branch=master' alt='Coverage Status' /></a>
 </div>
-
-<a href="https://travis-ci.org/wollmers/Grapheme-Ngram"><img src="https://travis-ci.org/wollmers/Grapheme-Ngram.png" alt="Grapheme-Ngram"></a>
-<a href='https://coveralls.io/r/wollmers/Grapheme-Ngram?branch=master'><img src='https://coveralls.io/repos/wollmers/Grapheme-Ngram/badge.png?branch=master' alt='Coverage Status' /></a>
 
 # SYNOPSIS
 
