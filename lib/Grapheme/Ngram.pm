@@ -86,7 +86,7 @@ C<$width> ....... length of the resulting tokens. Default is 1.
 
 C<$array_ref> ... reference to array of ngram tokens
 
-Returns one token with the unmodified C<$string> if number of graphemes in C<$string> is lower than C<$width>.
+Returns one token with the unmodified C<$string> if the number of graphemes in C<$string> is lower than C<$width>.
 Returns an empty C<$array_ref> if C<$string> is empty or undef. NOTE: maybe this will be changed in future.
 Defaults to length = 1 if C<$width> is not an integer larger than 0. 
 
