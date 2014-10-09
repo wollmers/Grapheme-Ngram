@@ -30,15 +30,18 @@ Building n-grams is one of them.
 
 ## ngram
 
-    my @ngram = $object->ngram($string, $width);
+    my $array_ref = $object->ngram($string, $width);
     
 
-`$string` ... string of characters
+`$string` ...... string of characters
 
-`$width` ... length of the resulting tokens. Default is 1.
+`$width` ....... length of the resulting tokens. Default is 1.
 
-Returns an empty list if the number of graphemes in `$string` is lower than `$width`,
-or if `$width` is not an integer larger than 0.    
+`$array_ref` ... reference to array of ngram tokens
+
+Returns one token with the unmodified `$string` if the number of graphemes in `$string` is lower than `$width`.
+Returns an empty `$array_ref` if `$string` is empty or undef. NOTE: maybe this will be changed in future.
+Defaults to length = 1 if `$width` is not an integer larger than 0. 
 
 ## from\_tokens
 

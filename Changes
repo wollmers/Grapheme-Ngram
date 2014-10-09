@@ -1,6 +1,8 @@
 Revision history for Grapheme::Ngram
 
 {{$NEXT}}
+
+0.005  2014-10-09 11:42:26 CEST
        - improved test coverage
        - return as is if length shorter width
 
