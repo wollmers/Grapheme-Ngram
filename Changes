@@ -1,6 +1,8 @@
 Revision history for Grapheme::Ngram
 
 {{$NEXT}}
+       - improved test coverage
+       - return as is if length shorter width
 
 0.004  2014-08-16 23:38:24 CEST
        - badges in pod
