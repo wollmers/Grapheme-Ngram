@@ -1,6 +1,8 @@
 Revision history for Grapheme::Ngram
 
 {{$NEXT}}
+
+0.006  2015-05-28 23:52:41 CEST
        - improved tests
 
 0.005  2014-10-09 11:42:26 CEST
