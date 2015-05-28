@@ -3,18 +3,18 @@
 Grapheme::Ngram - n-grams of Unicode Extended Grapheme Clusters
 
 <div>
-
     <a href="https://travis-ci.org/wollmers/Grapheme-Ngram"><img src="https://travis-ci.org/wollmers/Grapheme-Ngram.png" alt="Grapheme-Ngram"></a>
     <a href='https://coveralls.io/r/wollmers/Grapheme-Ngram?branch=master'><img src='https://coveralls.io/repos/wollmers/Grapheme-Ngram/badge.png?branch=master' alt='Coverage Status' /></a>
+    <a href='http://cpants.cpanauthors.org/dist/Grapheme-Ngram'><img src='http://cpants.cpanauthors.org/dist/Grapheme-Ngram.png' alt='Kwalitee Score' /></a>
+    <a href="http://badge.fury.io/pl/Grapheme-Ngram"><img src="https://badge.fury.io/pl/Grapheme-Ngram.svg" alt="CPAN version" height="18"></a>
 </div>
 
 # SYNOPSIS
 
     use Grapheme::Ngram;
-    
+
     my $class = 'Grapheme::Ngram';
     my @ngrams = $class->ngram($string,$width);
-    
 
 # DESCRIPTION
 
@@ -31,7 +31,6 @@ Building n-grams is one of them.
 ## ngram
 
     my $array_ref = $object->ngram($string, $width);
-    
 
 `$string` ...... string of characters
 
@@ -41,24 +40,21 @@ Building n-grams is one of them.
 
 Returns one token with the unmodified `$string` if the number of graphemes in `$string` is lower than `$width`.
 Returns an empty `$array_ref` if `$string` is empty or undef. NOTE: maybe this will be changed in future.
-Defaults to length = 1 if `$width` is not an integer larger than 0. 
+Defaults to length = 1 if `$width` is not an integer larger than 0.
 
 ## from\_tokens
 
     my @ngram = $object->from_tokens(\@tokens, $width);
-    
 
 Same as `ngram` but takes tokens. This method is used by `ngram`.
 
 This allows to use a custom tokenizer for e.g. treating 'sh' also as grapheme:
 
     my @tokens = $string =~ m/(Sh|sh|\X)/g;
-    
 
 ## \_tokenize
 
     my @graphemes = $object->_tokenize($string);
-    
 
 This internal method splits `$string` into a list of graphemes.
 
@@ -69,6 +65,10 @@ This internal method splits `$string` into a list of graphemes.
 # AUTHOR
 
 Helmut Wollmersdorfer, <helmut.wollmersdorfer@gmail.com>
+
+<div>
+    <a href='http://cpants.cpanauthors.org/author/wollmers'><img src='http://cpants.cpanauthors.org/author/wollmers.png' alt='Kwalitee Score' /></a>
+</div>
 
 # COPYRIGHT AND LICENSE
 

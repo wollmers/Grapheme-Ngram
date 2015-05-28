@@ -51,17 +51,22 @@ __END__
 
 Grapheme::Ngram - n-grams of Unicode Extended Grapheme Clusters
 
-=for html
+=begin html
+
 <a href="https://travis-ci.org/wollmers/Grapheme-Ngram"><img src="https://travis-ci.org/wollmers/Grapheme-Ngram.png" alt="Grapheme-Ngram"></a>
 <a href='https://coveralls.io/r/wollmers/Grapheme-Ngram?branch=master'><img src='https://coveralls.io/repos/wollmers/Grapheme-Ngram/badge.png?branch=master' alt='Coverage Status' /></a>
+<a href='http://cpants.cpanauthors.org/dist/Grapheme-Ngram'><img src='http://cpants.cpanauthors.org/dist/Grapheme-Ngram.png' alt='Kwalitee Score' /></a>
+<a href="http://badge.fury.io/pl/Grapheme-Ngram"><img src="https://badge.fury.io/pl/Grapheme-Ngram.svg" alt="CPAN version" height="18"></a>
+
+=end html
 
 =head1 SYNOPSIS
 
  use Grapheme::Ngram;
- 
+
  my $class = 'Grapheme::Ngram';
  my @ngrams = $class->ngram($string,$width);
- 
+
 
 =head1 DESCRIPTION
 
@@ -79,31 +84,31 @@ Building n-grams is one of them.
 =head2 ngram
 
   my $array_ref = $object->ngram($string, $width);
-  
+
 C<$string> ...... string of characters
-  
+
 C<$width> ....... length of the resulting tokens. Default is 1.
 
 C<$array_ref> ... reference to array of ngram tokens
 
 Returns one token with the unmodified C<$string> if the number of graphemes in C<$string> is lower than C<$width>.
 Returns an empty C<$array_ref> if C<$string> is empty or undef. NOTE: maybe this will be changed in future.
-Defaults to length = 1 if C<$width> is not an integer larger than 0. 
+Defaults to length = 1 if C<$width> is not an integer larger than 0.
 
 =head2 from_tokens
 
   my @ngram = $object->from_tokens(\@tokens, $width);
-  
+
 Same as C<ngram> but takes tokens. This method is used by C<ngram>.
 
 This allows to use a custom tokenizer for e.g. treating 'sh' also as grapheme:
 
   my @tokens = $string =~ m/(Sh|sh|\X)/g;
-  
+
 =head2 _tokenize
 
   my @graphemes = $object->_tokenize($string);
-  
+
 This internal method splits C<$string> into a list of graphemes.
 
 =head1 SOURCE REPOSITORY
@@ -113,6 +118,12 @@ L<http://github.com/wollmers/Grapheme-Ngram>
 =head1 AUTHOR
 
 Helmut Wollmersdorfer, E<lt>helmut.wollmersdorfer@gmail.comE<gt>
+
+=begin html
+
+<a href='http://cpants.cpanauthors.org/author/wollmers'><img src='http://cpants.cpanauthors.org/author/wollmers.png' alt='Kwalitee Score' /></a>
+
+=end html
 
 =head1 COPYRIGHT AND LICENSE
 
